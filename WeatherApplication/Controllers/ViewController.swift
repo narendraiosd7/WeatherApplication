@@ -72,7 +72,7 @@ extension ViewController: WeatherViewDataSource {
     }
     
     var pressureDescription: String {
-        "\(viewModel.weather?.main?.pressure ?? 0)"
+        "\(viewModel.weather?.main?.pressure ?? 0) inHg"
     }
     
     var humidityTitle: String {
@@ -80,7 +80,7 @@ extension ViewController: WeatherViewDataSource {
     }
     
     var humidityDescription: String {
-        "\(viewModel.weather?.main?.humidity ?? 0)"
+        "\(viewModel.weather?.main?.humidity ?? 0)%"
     }
     
     var windTitle: String {
@@ -88,7 +88,7 @@ extension ViewController: WeatherViewDataSource {
     }
     
     var windDescription: String {
-        "\(viewModel.weather?.wind?.speed ?? 0)"
+        "\(viewModel.weather?.wind?.speed ?? 0) mph"
     }
     
     var visibilityTitle: String {
@@ -96,7 +96,7 @@ extension ViewController: WeatherViewDataSource {
     }
     
     var visibilityDescription: String {
-        "\(viewModel.weather?.visibility ?? 0)"
+        "\(viewModel.weather?.visibility ?? 0) mi"
     }
     
     var temperature: String {
