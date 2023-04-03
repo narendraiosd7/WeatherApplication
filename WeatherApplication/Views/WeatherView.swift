@@ -82,13 +82,13 @@ class WeatherView: UIView {
         lowTemperatureLabel.textColor = .white
         cityNameLabel.textColor = .white
         searchTextField.textColor = .white
-        humidutyTitleLabel.textColor = .white
+        humidutyTitleLabel.textColor = .white.withAlphaComponent(0.5)
         humidutyDescription.textColor = .white
-        pressureTitleLabel.textColor = .white
+        pressureTitleLabel.textColor = .white.withAlphaComponent(0.5)
         pressureDescriptionLabel.textColor = .white
-        visibilityTitleLabel.textColor = .white
+        visibilityTitleLabel.textColor = .white.withAlphaComponent(0.5)
         visibilityDescription.textColor = .white
-        windTitleLabel.textColor = .white
+        windTitleLabel.textColor = .white.withAlphaComponent(0.5)
         windDescription.textColor = .white
     }
     
@@ -98,6 +98,14 @@ class WeatherView: UIView {
         descriptionLabel.font = .systemFont(ofSize: 14, weight: .medium)
         highTemperatureLabel.font = .systemFont(ofSize: 14, weight: .medium)
         lowTemperatureLabel.font = .systemFont(ofSize: 14, weight: .medium)
+        humidutyTitleLabel.font = .systemFont(ofSize: 14)
+        humidutyDescription.font = .systemFont(ofSize: 18, weight: .bold)
+        pressureTitleLabel.font = .systemFont(ofSize: 14)
+        pressureDescriptionLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        visibilityTitleLabel.font = .systemFont(ofSize: 14)
+        visibilityDescription.font = .systemFont(ofSize: 18, weight: .bold)
+        windTitleLabel.font = .systemFont(ofSize: 14)
+        windDescription.font = .systemFont(ofSize: 18, weight: .bold)
     }
     
     private func setupRoundedCornersAndShadowToViews() {
